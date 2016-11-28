@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: header-sub
+*/
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -16,6 +21,12 @@
 
 <div id="main-submit"><a href="#">空室確認</a></div>
 
+<?php
+$page_id = 26;
+$content = get_page($page_id);
+echo $content->post_content;
+?>
+
 <nav>
   <?php wp_nav_menu( array(
     'theme_location'  =>'mainmenu',
@@ -26,5 +37,7 @@
 </nav>
 
 </header>
+
+<?php breadcrumb(); ?>
 
 <?php wp_head(); ?>
