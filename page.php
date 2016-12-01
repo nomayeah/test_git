@@ -8,11 +8,11 @@
         the_post();
   ?>
 
-    <div class="article-content">
+    <div class="article">
       <h2><?php the_title(); ?></h2>
       <div class="article-date"><?php echo get_the_date(); ?><?php the_category(', '); ?></div>
 
-      <div class="article-txt"><?php the_content(); ?></div></a>
+      <div class="article-content"><?php the_content(); ?></div></a>
     </div>
 
 

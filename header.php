@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <title><?php wp_title('│', true, 'right'); bloginfo('name'); ?></title>
-<script src="base.js"></script>
+
 <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/swiper.min.css">
 
 </head>
-<body>
+<body class="article">
 
 <header>
 <?php echo qtranxf_generateLanguageSelectCode('text'); ?>
 
-<h1><a href="<?php echo home_url('/'); ?>"><span>和風ペンション</span>ことりの樹</a></h1>
+<h1><a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logosample.png" alt=""><span>和風ペンション</span>ことりの樹</a></h1>
 
 <div id="main-submit"><a href="#">空室確認</a></div>
 
@@ -26,5 +27,7 @@
 </nav>
 
 </header>
+
+<?php breadcrumb(); ?>
 
 <?php wp_head(); ?>

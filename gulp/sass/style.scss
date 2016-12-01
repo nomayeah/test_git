@@ -1,0 +1,108 @@
+/*
+Theme Name: kotori_no_ki original thema
+Theme URI: http://kotorinoki.com/
+Description: kotori_no_ki original thema
+
+Author: kotori_no_ki
+Author URI: http://kotorinoki.com/
+
+*/
+
+html{color:#000;background:#FFF;font-family: serif;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+* {margin: 0;padding: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+ul {list-style-type: none;}
+img {width: 100%;vertical-align: top;}
+
+header {background-color: #f3f1ea;position: relative;
+  ul#qtranslate-chooser {display: flex;justify-content: flex-end;padding: 16px 50px 0;
+    li {padding: 0 5px;font-size: 13px;font-weight: 700;
+      &.active a {text-decoration: none;color: #424242;}
+      &:last-child span {border-right: 0;}
+    }
+    a {color: #006634;}
+    span {border-right: 1px solid ;padding: 0 8px 0 0;}
+  }
+  h1 {padding: 0 60px 20px;
+    a {display: block;
+      img {width: 320px;display: block;}
+    }
+  }
+  button {background-color: transparent;border: 1px solid #000;cursor: pointer;outline: none;padding: 5px;appearance: none;}
+  nav ul {display: flex;justify-content: space-between;padding: 0 50px;
+    li {width: 15%;text-align: center;}
+    a {text-decoration: none;color: #424242;font-size: 20px;display: flex;justify-content: center;align-items: center;height: 60px;}
+  }
+  #main-submit {position: absolute;top: 60px;right: 60px;width: 200px;
+    a {display: block;padding: 12px 0;text-align: center;color: #fff;background-color: #006634;font-size: 24px;text-decoration: none;border-radius: 4px;}
+  }
+}
+
+.current-menu-item {font-size: 20px;
+  a {background-color: #006634;color: #ffffff;}
+}
+
+footer {background-color: #ccf;
+  ul {display: flex;justify-content: space-around;padding: 10px;}
+  li {padding: 10px;}
+}
+
+#breadcrumb ul {padding: 0 60px;margin: 30px 0 20px;font-size: 22px;
+  li {display: inline;list-style: none;
+    &:first-child:before {content: none;}
+    &:before {content: '/';margin: 0 5px 0 0;}
+    > a{color: #006634;margin-right: 5px;text-decoration: none;}
+    a:hover {text-decoration: underline;}
+  }
+}
+
+
+section {
+  h2 {text-align: center;padding: 10px 0;background-color: #f3f1ea;font-size: 50px;padding: 70px 0 100px;}
+  h3 {font-size: 30px;margin: 30px 0;padding: 0 15px;
+    + p {font-size: 26px;padding: 0 15px;}
+  }
+}
+
+section#section-01 {text-align: center;
+  h2 {background-color: transparent;font-size: 55px;padding: 120px 0;line-height: 1.8;}
+  li {text-align: left;}
+}
+
+
+section#section-02 {
+  ul {display: flex;justify-content: space-between;padding: 70px 60px;}
+  li {width: 49%;}
+}
+
+
+section#section-03 {
+  ul {display: flex;justify-content: space-between;padding: 70px 60px;}
+  li {width: 49%;}
+}
+
+
+
+section#section-04 {position: relative;
+  .caption {position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;height: 700px;
+    p {margin-bottom: 70px;font-size: 45px;text-align: center;color: #fff;}
+    a {display: block;text-decoration: none;font-size: 24px;padding: 11px 0;border: 1px solid;width: 360px;color: #ffffff;margin: 0 auto;border-radius: 4px;}
+  }
+}
+
+
+.tablet-view iframe, .sp-view iframe {display: none;}
+
+
+
+
+@import "hall";
+@import "blog";
+
+
+
+
+@import "tablet";
+@import "sp";
+
+

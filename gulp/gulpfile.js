@@ -9,7 +9,7 @@ gulp.task("sass", function() {
     .pipe(plumber())
     .pipe(sass({outputStyle : 'compact'}))
     .pipe(autoprefixer())
-    .pipe(gulp.dest("../css"));
+    .pipe(gulp.dest("../"));
 });
 
 
@@ -22,8 +22,7 @@ gulp.task("js", function() {
   gulp.src(["js/**/*.js","!js/min/**/*.js"])
     .pipe(plumber())
     .pipe(uglify())
-    .pipe(autoprefixer())
-    .pipe(gulp.dest("./js/min"));
+    .pipe(gulp.dest("../js"));
 });
 
 

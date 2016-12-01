@@ -12,8 +12,14 @@
     <li><a href="/">リンク</a></li>
     <li><a href="/">お問い合わせ</a></li>
   </ul>
+
   <div id="copyright">© 2016<?php if (date("Y")!=2016) echo date("-Y"); ?> All rights reserved, kotorinoki.</div>
+
 </footer>
+
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/swiper.min.js"></script>
+
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/base.js"></script>
 
 <?php wp_footer(); ?>
 </body>

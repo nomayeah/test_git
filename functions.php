@@ -19,7 +19,7 @@ function breadcrumb(){
   if(!is_home()&&!is_admin()){ /* !is_admin は管理ページ以外という条件分岐 */
     $str.= '<div id="breadcrumb">';
     $str.= '<ul>';
-    $str.= '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . home_url('/') .'" class="home" itemprop="url" ><span itemprop="title">HOME</span></a></li>';
+    $str.= '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . home_url('/') .'" class="home" itemprop="url" ><span itemprop="title">TOP</span></a></li>';
 
     /* 投稿のページ */
     if(is_single()){
@@ -109,8 +109,8 @@ function breadcrumb(){
 
 add_theme_support('post-thumbnails');
 
-function my_bootstrap_scripts() {
-  wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/lib/bootstrap-3.3.2-dist/css/bootstrap.min.css');
-  wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/lib/bootstrap-3.3.2-dist/js/bootstrap.min.js', array(), '1.0.0', true );
-}
-add_action( 'wp_enqueue_scripts', 'my_bootstrap_scripts' );
+// function my_bootstrap_scripts() {
+//   wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css');
+//   wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js', array(), '1.0.0', true );
+// }
+// add_action( 'wp_enqueue_scripts', 'my_bootstrap_scripts' );

@@ -1,0 +1,6 @@
+/* sp width 599px 内の場合 */
+
+@media screen and ( max-width: 599px ){
+  .sp-view iframe {display: block;}
+  .pc-view iframe,.tablet-view iframe {display: none;}
+}
