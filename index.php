@@ -8,7 +8,8 @@
         while ( have_posts() ) :
           the_post();
     ?>
-      <li><a href="<?php the_permalink(); ?>">
+      <li>
+      <!-- <a href="<?php the_permalink(); ?>"> -->
         <h2><?php the_title(); ?></h2>
         <div class="blog-date"><?php echo get_the_date(); ?></div>
         <div class="blog-thumbnail">
@@ -19,8 +20,9 @@
           <?php endif; ?>
 
         </div>
-        <div class="blog-txt"><?php the_excerpt(); ?></div></a>
-        <?php the_category(', '); ?>
+        <div class="blog-txt"><?php the_excerpt(); ?></div>
+        <!-- </a>
+        <?php the_category(', '); ?> -->
       </li>
 
 

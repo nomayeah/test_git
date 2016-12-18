@@ -20,7 +20,7 @@ Template Name: header-sub
 
 <h1><a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logosample.png" alt=""><span>和風ペンション</span>ことりの樹</a></h1>
 
-<div id="main-submit"><a href="#">空室確認</a></div>
+<div id="main-submit"><a href="#">予約する</a></div>
 
 <?php
 $page_id = 26;
@@ -36,6 +36,8 @@ echo $content->post_content;
     'items_wrap'      =>'<ul id="main-nav">%3$s</ul>'));
   ?>
 </nav>
+
+<div id="menu-btn"><span></span></div>
 
 </header>
 

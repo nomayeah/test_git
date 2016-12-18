@@ -1,0 +1,8 @@
+.contact-repletion {margin-bottom: 30px;
+  li {
+    span {font-size: 20px;position: relative;padding-left: 25px;line-height: 1.9;
+      &:after {content: "";display: block;font-size: 15px;width: 2px;height: 1px;position: absolute;top: 0;bottom: 0;left: 5px;margin: auto;border-top: 2px solid;}
+    }
+   img {width: auto;display: block;}
+  }
+}

@@ -1,6 +1,41 @@
-/* sp width 599px 内の場合 */
+/* sp width 768px 内の場合 */
 
-@media screen and ( max-width: 599px ){
+@media screen and ( max-width: 768px ){
   .sp-view iframe {display: block;}
   .pc-view iframe,.tablet-view iframe {display: none;}
+
+  header {
+    h1 {padding: 0 20px 20px;}
+    #main-submit {top: 86px;right: 20px;width: 160px;
+      a {padding: 8px 0;font-size: 18px;}
+    }
+  }
+  div#menu-btn {display: block;}
+
+  section {
+    h2 {padding: 20px 0;font-size: 28px;}
+    h3 {font-size: 20px;padding: 0;margin: 10px 0;
+      + p {font-size: 16px;padding: 0;}
+    }
+  }
+
+  section#section-01 h2 {
+    padding: 20px 0;
+    font-size: 18px;
+  }
+
+  section#section-02 {
+    ul {flex-wrap: wrap;padding: 20px;}
+    li {width: 100%;margin-bottom: 40px;}
+  }
+
+  section#section-03 {
+    ul {flex-wrap: wrap;padding: 20px;}
+    li {width: 100%;margin-bottom: 40px;}
+  }
+
+  section#section-04 .caption {height: 300px;
+    p {margin-bottom: 30px;font-size: 24px;}
+  }
+
 }

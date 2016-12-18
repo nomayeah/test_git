@@ -13,39 +13,62 @@ html{color:#000;background:#FFF;font-family: serif;}body,div,dl,dt,dd,ul,ol,li,h
 * {margin: 0;padding: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 ul {list-style-type: none;}
 img {width: 100%;vertical-align: top;}
+p > br {display: none;}
 
-header {background-color: #f3f1ea;position: relative;
-  ul#qtranslate-chooser {display: flex;justify-content: flex-end;padding: 16px 50px 0;
-    li {padding: 0 5px;font-size: 13px;font-weight: 700;
-      &.active a {text-decoration: none;color: #424242;}
+
+header {background-color: #f9eedd;position: relative;
+  ul#qtranslate-chooser {display: flex;justify-content: center;flex-flow: column nowrap;position: absolute;top: 40px;right: 290px;z-index: 10;
+    li {padding: 0 5px;font-size: 13px;font-weight: 700;display: none;cursor: pointer;width: 100px;
+      &.active {display: block;
+        a {text-decoration: none;color: #424242;pointer-events: none;}
+      }
       &:last-child span {border-right: 0;}
     }
-    a {color: #006634;}
-    span {border-right: 1px solid ;padding: 0 8px 0 0;}
+    /*a {color: #006634;}
+    span {border-right: 1px solid ;padding: 0 8px 0 0;}*/
   }
-  h1 {padding: 0 60px 20px;
-    a {display: block;
-      img {width: 320px;display: block;}
+  h1 {padding: 10px 150px;
+    a {display: block;color: #006634;text-decoration: none;
+      img {width: 210px;display: block;}
     }
   }
   button {background-color: transparent;border: 1px solid #000;cursor: pointer;outline: none;padding: 5px;appearance: none;}
-  nav ul {display: flex;justify-content: space-between;padding: 0 50px;
+  nav ul {display: flex;justify-content: center;padding: 0 100px;
     li {width: 15%;text-align: center;}
-    a {text-decoration: none;color: #424242;font-size: 20px;display: flex;justify-content: center;align-items: center;height: 60px;}
+    a {text-decoration: none;color: #424242;font-size: 20px;display: flex;justify-content: center;align-items: center;height: 70px;padding: 10px 0 0;}
   }
-  #main-submit {position: absolute;top: 60px;right: 60px;width: 200px;
-    a {display: block;padding: 12px 0;text-align: center;color: #fff;background-color: #006634;font-size: 24px;text-decoration: none;border-radius: 4px;}
+  #main-submit {position: absolute;top: 15px;right: 60px;width: 200px;
+    a {display: block;padding: 12px 0;text-align: center;color: #fff;background-color: #429d0a;font-size: 24px;text-decoration: none;border-radius: 30px;}
   }
 }
+
+div#menu-btn {width: 80px;height: 80px;position: absolute;top: 10px;right: 10px;background-color: #fff;display: none;}
+
 
 .current-menu-item {font-size: 20px;
-  a {background-color: #006634;color: #ffffff;}
+  a {border-bottom: 5px solid #00a800;}
 }
 
-footer {background-color: #ccf;
-  ul {display: flex;justify-content: space-around;padding: 10px;}
+nav.top-nav ul li:nth-of-type(1) {border-bottom: 5px solid #00a800;}
+
+
+footer {background-color: #433b2e;color: #ffffff;
+  ul {display: flex;justify-content: flex-start;padding: 10px;}
   li {padding: 10px;}
+  a {color: #ba9a70;}
+  .site-data {display: flex;justify-content: space-around;padding: 30px 100px;}
+  .owner {width: 45%;
+    dl {display: flex;}
+    dt {width: 25%;}
+    dd {flex: 1;}
+  }
+  .address-data {
+    ul {display: block;}
+    li {padding: 0;margin: 0;}
+  }
 }
+div#copyright {text-align: center;}
+
 
 #breadcrumb ul {padding: 0 60px;margin: 30px 0 20px;font-size: 22px;
   li {display: inline;list-style: none;
@@ -58,10 +81,14 @@ footer {background-color: #ccf;
 
 
 section {
-  h2 {text-align: center;padding: 10px 0;background-color: #f3f1ea;font-size: 50px;padding: 70px 0 100px;}
+  h2 {text-align: center;background-color: #f3f1ea;font-size: 50px;padding: 50px 0 30px;}
   h3 {font-size: 30px;margin: 30px 0;padding: 0 15px;
     + p {font-size: 26px;padding: 0 15px;}
   }
+}
+
+section#top-caption {position: relative;
+  h2 {width: 600px;height: 150px;text-align: left;color: #fff;background-color: rgba(0, 0, 0, 0.2);font-size: 30px;padding: 10px;position: absolute;top: 0;bottom: 0;left: 30px;margin: auto;}
 }
 
 section#section-01 {text-align: center;
@@ -71,22 +98,41 @@ section#section-01 {text-align: center;
 
 
 section#section-02 {
-  ul {display: flex;justify-content: space-between;padding: 70px 60px;}
-  li {width: 49%;}
+  ul {display: flex;justify-content: space-between;flex-flow: column nowrap;}
+  li {display: flex;flex-wrap: wrap;align-items: center;
+    &:nth-of-type(1) {text-align: right;
+      .thumb {order: 2;}
+      .block {order: 1;padding-left: 0;padding-right: 80px;}
+    }
+    .thumb {width: 50%;}
+    .block {width: 50%;padding-left: 80px;}
+    h3 {font-size: 40px;display: block;padding-right: 80px;
+      + p {padding-right: 80px;}
+    }
+  }
 }
 
 
 section#section-03 {
-  ul {display: flex;justify-content: space-between;padding: 70px 60px;}
-  li {width: 49%;}
+  ul {display: flex;justify-content: space-between;flex-flow: column nowrap;}
+  li {display: flex;flex-wrap: wrap;align-items: center;
+    &:nth-of-type(1) {text-align: right;
+      .thumb {order: 2;}
+      .block {order: 1;padding-left: 0;padding-right: 80px;}
+    }
+    .thumb {width: 50%;}
+    .block {width: 50%;padding-left: 80px;}
+    h3 {font-size: 40px;display: block;padding-right: 80px;
+      + p {padding-right: 80px;}
+    }
+  }
 }
-
 
 
 section#section-04 {position: relative;
   .caption {position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;height: 700px;
     p {margin-bottom: 70px;font-size: 45px;text-align: center;color: #fff;}
-    a {display: block;text-decoration: none;font-size: 24px;padding: 11px 0;border: 1px solid;width: 360px;color: #ffffff;margin: 0 auto;border-radius: 4px;}
+    a {display: block;text-decoration: none;font-size: 32px;padding: 6px 0;width: 360px;color: #ffffff;margin: 0 auto;border-radius: 100px;background-color: #50b40f;}
   }
 }
 
@@ -98,11 +144,12 @@ section#section-04 {position: relative;
 
 @import "hall";
 @import "blog";
-
-
+@import "price";
+@import "contact";
 
 
 @import "tablet";
 @import "sp";
 
-
+/* contact form 7 img 大きくなってしまったので… */
+div.wpcf7 img.ajax-loader {width: auto;}

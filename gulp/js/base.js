@@ -16,3 +16,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 galleryTop.params.control = galleryThumbs;
 
 galleryThumbs.params.control = galleryTop;
+
+$('#qtranslate-chooser li').on('click',function(){
+  $('#qtranslate-chooser li').css('display', 'block');
+});
