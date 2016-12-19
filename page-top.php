@@ -20,7 +20,7 @@ Template Name: page-top
 
 <h1><a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logosample.png" alt=""><span>和風ペンション</span>ことりの樹</a></h1>
 
-<div id="main-submit"><a href="#">予約する</a></div>
+<div id="main-submit">予約する</div>
 
 <?php
 $page_id = 26;
