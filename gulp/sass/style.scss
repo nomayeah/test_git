@@ -107,7 +107,7 @@ section#section-02 {
     .thumb {width: 50%;}
     .block {width: 50%;padding-left: 80px;}
     h3 {font-size: 40px;display: block;padding-right: 80px;
-      + p {padding-right: 80px;}
+      + p {padding-right: 80px;font-size: auto;}
     }
   }
 }
